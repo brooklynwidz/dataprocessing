@@ -3,7 +3,7 @@
 void student(int row, int col, int students[row][col]);
 void avg(int row, int col, int marks[row][col]);
 void highest(int row, int col, int marks[row][col]);
-int highestmarks(int row, int col, int marks[row][col],int a[]);
+void highestmarks(int row, int col, int marks[row][col],int a[]);
 void highestPerSubject(int row, int col, int a[row][col]);
 
 
@@ -77,7 +77,7 @@ void highest(int row, int col, int marks[row][col]){
     printf("highest marks obtained by student %d is %d\n",higheststudent, highestmarks);
 }
 
-int highestmarks(int row, int col, int marks[row][col],int a[]){
+void highestmarks(int row, int col, int marks[row][col],int a[]){
     int highest = 0;
     int student = 0;
     for (int i = 0; i<row; i++ ){
